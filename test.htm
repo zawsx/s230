@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><title>Caption</title><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css"  media="screen" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src="js/jR3DCarousel.min.js"></script>
+<script>
+            $(document).ready(function() {
+  // with minimal configuration and default setting	$('.jR3DCarouselGallery').jR3DCarousel({ slides: slides }); Or with options
+  $('.jR3DCarouselGallery').jR3DCarousel({width: 800, // largest allowed width
+    height: 600, // largest allowed height
+    slideClass: 'jR3DCarouselCustomSlide', // array of images source or slides from template
+    slideLayout: 'contain', // "contain" (fit according to aspect ratio), "fill" (stretches object to fill) and "cover" (overflows box but maintains ratio)
+    animation: 'scroll3D', // slide | slide3D | scroll | scroll3D | fade
+    animationCurve: 'ease',
+    animationDuration: 2000,  animationInterval: 1000,  autoplay: true,
+    onSlideShow: shown, // callback when Slide show event occurs
+    navigation: 'circles'  });
+  function shown(slide) {console.log("Slide shown: ", slide.find('img').attr('src'));} });</script>
+<style>body { /*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 9px;*/
+  overflow-x: hidden;  text-align: center;}
+.jR3DCarouselGallery, .jR3DCarouselGallery1 {  margin: 0 auto;}
+.jR3DCarouselCaption {  position: relative;  background: rgba(238, 238, 238, 0.77);  font-size: 2.2rem;  margin: -2px 0;}</style>
+</head><body><div class="container">
+<div class="jR3DCarouselGallery">
+    <div class="jR3DCarouselCustomSlide"><img src="http://pics4.city-data.com/cpicv/vfiles13933.jpg" />
+      <div class="jR3DCarouselCaption">Rock and Roll Hall of Fame--When did you last visit?</div></div>
+    <div class="jR3DCarouselCustomSlide"><img src="http://media2.fdncms.com/clevescene/imager/view-from-the-flats-2008/u/slideshow/4326745/s-5.jpg" />
+      <div class="jR3DCarouselCaption">Skyline from the West Bank of the Cuyahoga</div></div>
+    <div class="jR3DCarouselCustomSlide"><img src="http://media2.fdncms.com/clevescene/imager/rock-hall-2007/u/slideshow/4326752/s-12.jpg" />
+      <div class="jR3DCarouselCaption">Rock Hall from the Lake</div></div>
+    <div class="jR3DCarouselCustomSlide"><img src="http://pics4.city-data.com/cpicc/cfiles21094.jpg" />
+      <div class="jR3DCarouselCaption">Lighthouse at Mouth of the Cuyahoga</div></div>
+    <div class="jR3DCarouselCustomSlide"><img src="http://i.cdn.turner.com/drp/nba/cavaliers/sites/default/files/styles/main_gallery_photo__480_tall/public/160304-wascle-4.jpg?itok=_IDZTUZv" />
+      <div class="jR3DCarouselCaption">LeBron Making a Grand Slam!</div></div>
+  </div>
+</div></body></html>
