@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){/* convert a cubic bezier value to a custom mina easing http://stackoverflow.com/questions/25265197/how-to-convert-a-cubic-bezier-value-to-a-custom-mina-easing-snap-svg 	*/
+document.ready(function(){/* convert a cubic bezier value to a custom mina easing http://stackoverflow.com/questions/25265197/how-to-convert-a-cubic-bezier-value-to-a-custom-mina-easing-snap-svg 	*/
 var duration=300,delay=300,epsilon=(1000 / 60 / duration) / 4,firstCustomMinaAnimation=bezier(.42,.03,.77,.63, epsilon),	secondCustomMinaAnimation=bezier(.27,.5,.6,.99, epsilon);
 function bezier(x1, y1, x2, y2, epsilon){	//https://github.com/arian/cubic-bezier
 var curveX = function(t){var v = 1 - t;	return 3 * v * v * t * x1 + 3 * v * t * t * x2 + t * t * t;	};
